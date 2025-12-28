@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villanos de Transformers</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(135deg, #000000 0%, #1a001a 100%);
+            color: #fff;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #4b0082 0%, #6a0dad 100%);
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+        }
+
+        header h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        nav {
+            background: #000000;
+            padding: 15px 0;
+            border-bottom: 2px solid #6a0dad;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s;
+            padding: 5px 10px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #6a0dad;
+            border-bottom: 2px solid #6a0dad;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .intro h2 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 2em;
+            margin-bottom: 15px;
+            color: #6a0dad;
+            text-transform: uppercase;
+        }
+
+        .intro p {
+            font-size: 1.1em;
+            opacity: 0.9;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .villains-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #0b0b0b 0%, #1a0326 100%);
+            border: 2px solid #6a0dad;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: all 0.3s;
+            box-shadow: 0 4px 15px rgba(106, 13, 173, 0.2);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(106, 13, 173, 0.4);
+            border-color: #4b0082;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #6a0dad 0%, #4b0082 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4em;
+            font-weight: bold;
+        }
+
+        .card h3 {
+            font-family: 'Orbitron', sans-serif;
+            padding: 20px 20px 10px;
+            font-size: 1.5em;
+            color: #6a0dad;
+            text-transform: uppercase;
+        }
+
+        .role {
+            padding: 0 20px;
+            color: #b388ff;
+            font-size: 0.9em;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            padding: 0 20px 20px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Amenazas de Cybertron</h1>
+        <p>Los enemigos más letales del universo</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Mi vida personal</a></li>
+            <li><a href="about.html">Opinión sobre la asignatura</a></li>
+            <li><a href="contact.html">En contacto</a></li>
+            <li><a href="link.html">Otras WEB</a></li>
+            <li><a href="../Transformers Decepticons/Transformers.html" class="active">Topic (Transformers)</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <h2>El Lado Oscuro de los Transformers</h2>
+            <p>Desde los líderes tiranos hasta los devoradores de mundos. Aquí se encuentran las mayores amenazas a las que los Autobots han tenido que enfrentarse en la historia de Cybertron.</p>
+        </section>
+
+        <section class="villains-grid">
+            
+            <article class="card">
+                <img src="Megatron.jpg" alt="Megatron" >
+                <h3>Megatron</h3>
+                <p class="role">Líder Decepticon</p>
+                <p>Un ex-gladiador de Kaon que busca la paz a través de la tiranía absoluta. Es brutal, implacable y el eterno rival de Optimus Prime.</p>
+            </article>
+
+            <article class="card">
+                <img src="megatronus.jpg" alt="Megatronus The Fallen" width="100%">
+                <h3>Megatronus</h3>
+                <p class="role">The Fallen (El Caído)</p>
+                <p>Uno de los Trece Primes originales. Traicionó a sus hermanos por poder y se convirtió en el primer Decepticon de la historia.</p>
+            </article>
+
+            <article class="card">
+                <img src="Scourge.png" alt="Scourge">
+                <h3>Scourge</h3>
+                <p class="role">Líder Terrorcon</p>
+                <p>Un cazador despiadado y heraldo de Unicron. Colecciona las insignias de sus víctimas como trofeos sobre su armadura.</p>
+            </article>
+
+            <article class="card">
+                <img src="Nemesis Prime.jpg" alt="Nemesis Prime" width="100%">
+                <h3>Nemesis Prime</h3>
+                <p class="role">Clon Oscuro</p>
+                <p>Una copia retorcida de Optimus Prime. Posee toda su fuerza pero carece de su moral, sirviendo a menudo como marioneta de fuerzas oscuras.</p>
+            </article>
+
+            <article class="card">
+                <img src="Unicron.jpg" alt="Unicron" width="100%">
+                <h3>Unicron</h3>
+                <p class="role">El Devorador de Mundos</p>
+                <p>La encarnación del caos y el mal en el universo. Un planeta viviente cuyo único propósito es consumir otras realidades.</p>
+            </article>
+
+        </section>
+    </main>
+
+</body>
+</html>

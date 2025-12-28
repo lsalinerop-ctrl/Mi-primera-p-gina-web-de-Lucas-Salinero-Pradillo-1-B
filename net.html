@@ -1,0 +1,144 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otras webs de amigos - Net</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Estilos específicos para la "Tabla" hecha con DIVs (presentación mejorada con IA) */
+        .net-table {
+            max-width: 920px;
+            margin: 30px auto 0;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+        }
+
+        .net-row {
+            display: grid;
+            grid-template-columns: 160px 1fr 140px; /* Nombre | Descripción | Acción */
+            background: linear-gradient(135deg, #070309 0%, #121018 100%);
+            border: 1px solid rgba(106,13,173,0.22);
+            padding: 16px;
+            border-radius: 10px;
+            align-items: center;
+            transition: transform 0.16s, box-shadow 0.16s, border-color 0.16s;
+        }
+
+        .net-row:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(106,13,173,0.12);
+            border-color: #b388ff;
+        }
+
+        .net-name {
+            font-family: 'Orbitron', sans-serif;
+            color: #b388ff;
+            font-weight: 700;
+            font-size: 1.08em;
+        }
+
+        .net-desc {
+            color: #d8d8d8;
+            font-size: 0.95em;
+        }
+
+        .net-action { text-align: right; }
+
+        .btn-visit {
+            display: inline-block;
+            padding: 8px 18px;
+            background: #6a0dad;
+            border: none;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 700;
+            transition: all 0.18s;
+        }
+
+        .btn-visit:hover { background:#54307a; transform:translateY(-2px); box-shadow: 0 6px 16px rgba(106,13,173,0.18); }
+
+        /* Encabezado de la "tabla" */
+        .net-header {
+            display: grid;
+            grid-template-columns: 160px 1fr 140px;
+            gap: 0;
+            background: linear-gradient(90deg,#4b0082,#6a0dad);
+            color: #fff;
+            font-weight: 700;
+            border-radius: 10px;
+            padding: 12px 16px;
+        }
+
+        .net-header div { text-transform: uppercase; font-size:0.85em; letter-spacing: 1px }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Red de Aliados</h1>
+        <p>Conexiones del Sistema</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="link.html" class="active">Otras web</a></li> 
+            <li><a href="../Transformers Decepticons/Transformers.html">Topic (Transformers)</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="breadcrumbs">
+        Decepticons Site > public > link.html
+    </div>
+
+            <div class="net-table">
+                
+                <div class="net-row net-header">
+                    <div>NOMBRE</div>
+                    <div>PROYECTO</div>
+                    <div style="text-align: right;">ENLACE</div>
+                </div>
+
+                <div class="net-row">
+                    <div class="net-name">Jorge</div>
+                    <div class="net-desc">Web sobre Inteligencia Artificial</div>
+                    <div class="net-action">
+                        <a href="#" class="btn-visit" target="_blank">Visitar</a>
+                    </div>
+                </div>
+
+                <div class="net-row">
+                    <div class="net-name"> Pedro</div>
+                    <div class="net-desc">Su Web</div>
+                    <div class="net-action">
+                        <a href="#" class="btn-visit" target="_blank">Visitar</a>
+                    </div>
+                </div>
+
+                 <div class="net-row">
+                    <div class="net-name"> Héctor</div>
+                    <div class="net-desc"> Su Web</div>
+                    <div class="net-action">
+                        <a href="#" class="btn-visit" target="_blank">Visitar</a>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <p>Trabajo Individual - Fundamentos de Ingeniería Informática</p>
+        <p>&copy; 2025 - Página creada por Lucas Salinero Pradillo 1ºB</p>
+    </footer>
+
+</body>
+</html>
